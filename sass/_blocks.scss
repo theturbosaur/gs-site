@@ -1,0 +1,27 @@
+.block{
+    // background:grey;
+    display:flex;
+    flex-direction:column;
+    min-height:100px;
+
+    &--12{
+        @extend .block;
+        grid-column: span 12;
+    }
+    &--10{
+        @extend .block;
+        grid-column: span 10;
+    }
+    &--8{
+        @extend .block;
+        grid-column: span 8;
+    }
+    &--6{
+        @extend .block;
+        grid-column: span 6;
+    }
+    &--4{
+        @extend .block;
+        grid-column: span 4;
+    }
+}

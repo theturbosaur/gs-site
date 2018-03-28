@@ -1,0 +1,58 @@
+.grid{
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap:1rem;
+    grid-row-gap:1rem;
+    margin-bottom:1rem;
+    &--contained{
+        @extend .grid;
+        width:80%;
+        margin:1rem auto;
+        &--no-gutter{
+            @extend .grid--contained;
+            grid-column-gap:0;
+        }
+    }
+
+    &--no-gutter{
+        @extend .grid;
+        grid-column-gap:0;
+    }
+}
+
+
+////////////// Grid Alignment ///////////////////
+
+.align-items--start{
+    align-items:start;
+}
+
+.align-items--end{
+    align-items:end;
+}
+
+.align-items--center{
+    align-items:center;
+}
+
+.align-items--stretch{
+    align-items:stretch;
+}
+
+////////////// Grid Margins ///////////////////
+
+.m-sm{
+    margin-bottom:4rem;
+}
+
+.m-md{
+    margin-bottom:6rem;
+}
+
+.m-lg{
+    margin-bottom:8rem;
+}
+
+.ji-sb{
+    justify-items:space-between;
+}

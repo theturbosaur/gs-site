@@ -1,0 +1,14 @@
+.bg{
+    margin:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    @extend .z-index--bg;
+    img{
+        height:100%;
+        width:100%;
+        object-fit:cover;
+    }
+}
