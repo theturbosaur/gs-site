@@ -1,0 +1,30 @@
+.section{
+    padding:4rem 0 0 0;
+    display:flow-root;
+
+    &--white{
+        @extend .section;
+        background:$white;
+    }
+
+    &--grey{
+        @extend .section;
+        background:$midSilver;
+    }
+
+     &--black{
+        @extend .section;
+        background:$black;
+    }
+}
+
+///Grid Spacing Utilities///
+.padding-none{
+    padding:0;
+}
+
+.padding-bottom{
+    padding-bottom:4rem;
+}
+
+

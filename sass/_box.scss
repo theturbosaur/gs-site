@@ -1,0 +1,71 @@
+.box{
+    display:flex;
+    flex-direction:column;
+    min-height:100px;
+    grid-column: span 4;
+    margin-bottom:2rem;
+    @include breakpoint(mobile-landscape) {
+        margin-bottom:0;
+    }
+
+    &:last-child{
+        margin-bottom:0;
+    }
+    .block:last-child{
+        margin-bottom:0;
+    }
+
+    &--12{
+        @extend .box;
+        @include breakpoint(mobile-landscape) {
+            grid-column: span 12;
+        }
+    }
+    &--10{
+        @extend .box;
+        @include breakpoint(mobile-landscape) {
+            grid-column: span 10;
+        }
+    }
+    &--8{
+        @extend .box;
+        @include breakpoint(mobile-landscape) {
+            grid-column: span 8;
+        }
+    }
+    &--6{
+        @extend .box;
+        @include breakpoint(mobile-landscape) {
+            grid-column: span 6;
+        }
+    }
+    &--4{
+        @extend .box;
+        @include breakpoint(mobile-landscape) {
+            grid-column: span 4;
+        }
+    }
+    &--3{
+        @extend .box;
+        @include breakpoint(mobile-landscape) {
+            grid-column: span 3;
+        }
+    }
+
+    &--2{
+        @extend .box;
+        @include breakpoint(mobile-landscape) {
+            grid-column: span 2;
+        }
+    }
+
+    &--subgrid{
+        display:flex;
+        flex-direction:column;
+        min-height:100px;
+        margin-bottom:2rem;
+        @include breakpoint(mobile-landscape) {
+            margin-bottom:0;
+        }
+    }
+}
