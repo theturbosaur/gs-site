@@ -1,0 +1,96 @@
+.btn{
+    //btn-reset//
+    border:none;
+    padding:0;
+    font-size:1rem;
+    font-family:'arial';
+
+    //base styles//
+    cursor:pointer;
+
+
+
+    &--cta{
+        @extend .btn;
+        @extend .transition;
+
+        &--blue{
+            @extend .btn--cta;
+            color:$white;
+            background:$satinBlue;
+            padding:1rem 2rem;
+            &:hover{
+                background:lighten( $satinBlue, 10% );
+            }
+            &:active{
+                background:darken( $satinBlue, 10% );
+            }
+        }
+
+        &--white{
+            @extend .btn--cta;
+            color:$textGrey;
+            background:$white;
+            padding:1rem 2rem;
+            &:hover{
+                background:lighten( $white, 10% );
+            }
+            &:active{
+                background:darken( $white, 10% );
+            }
+        }
+
+        &--grey{
+            @extend .btn--cta;
+            color:$textGrey;
+            background:$lightSilver;
+            padding:1rem 2rem;
+            &:hover{
+                background:lighten( $lightSilver, 10% );
+            }
+            &:active{
+                background:darken( $lightSilver, 10% );
+            }
+        }
+
+        &--black{
+            @extend .btn--cta;
+            color:$white;
+            background:$deviceBlack;
+            padding:1rem 2rem;
+            &:hover{
+                background:lighten( $deviceBlack, 10% );
+            }
+            &:active{
+                background:darken( $deviceBlack, 10% );
+            }
+        }
+
+        &--orange{
+            @extend .btn--cta;
+            color:$white;
+            background:$actionOrange;
+            padding:1rem 2rem;
+            &:hover{
+                background:lighten( $actionOrange, 10% );
+            }
+            &:active{
+                background:darken( $actionOrange, 10% );
+            }
+        }
+    }
+
+    &--link{
+        @extend .btn;
+        background:none;
+
+        &--blue{
+            @extend .btn--link;
+            color:$satinBlue;
+        }
+        &--orange{
+            @extend .btn--link;
+            color:$actionOrange;
+        }
+    }
+}

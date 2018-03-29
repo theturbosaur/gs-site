@@ -1,8 +1,12 @@
 .text-block{
-    padding:2rem;
-    *:first-child{
+    @extend .block;
+    width:100%;
+
+    p{
         margin-top:0;
+        margin-bottom:2rem;
     }
+    
     *:last-child{
         margin-bottom:0;
     }

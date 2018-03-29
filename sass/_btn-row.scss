@@ -1,0 +1,18 @@
+.btn-row{
+    // display:grid;
+    // grid-column-gap: 1rem;
+    // grid-row-gap: 1rem;
+
+    // grid-template-columns: repeat(auto-fill, minmax(auto, auto));
+
+    display:flex;
+    flex-wrap:wrap;
+
+    &--left{
+        @extend .btn-row;
+        .btn{
+            margin-right:1rem;
+            margin-bottom:1rem;
+        }
+    }
+}

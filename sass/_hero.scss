@@ -1,11 +1,21 @@
 .hero{
-    height:100vh;
-    width:100vw;
-    display:flex;
-    align-items:flex-end;
+	height:100vh;
+	width:100vw;
 
-    .article-head{
-        position: relative;
-        @extend .z-index--content;
-    }
+	.post-head{
+		position:relative;
+		@extend .z-index--content;
+	}
+
+	.post-id{
+		position:relative;
+		@extend .z-index--content;
+		writing-mode: vertical-rl;
+	    font-size: 20vw;
+	    float: right;
+	    width: 20%;
+	    margin-right: 10rem;
+	    mix-blend-mode: screen;
+	    color:grey;
+	}
 }
